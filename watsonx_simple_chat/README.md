@@ -39,7 +39,7 @@ To run this project, you need:
    ```sh
    git clone https://github.com/CHANGE_FOR_YOUR_GITHUB_USERNAME/demos.git
 
-   cd /demos/watsonx_simple_chat
+   cd ./demos/watsonx_simple_chat
    ```
 
 2. Create and activate a new Anaconda environment:
