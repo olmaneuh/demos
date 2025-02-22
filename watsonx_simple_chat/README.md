@@ -21,7 +21,7 @@ It demonstrates how to integrate an AI assistant into a simple web-based applica
 
 ## Demo
 
-todo....
+<img src="demo.gif" />
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ To run this project, you need:
    ```sh
    git clone https://github.com/CHANGE_FOR_YOUR_GITHUB_USERNAME/demos.git
 
-   cd demos/watsonx_simple_chat
+   cd /demos/watsonx_simple_chat
    ```
 
 2. Create and activate a new Anaconda environment:
@@ -51,7 +51,9 @@ To run this project, you need:
    ```
 
 3. Set up environment variables:
-   Create a `.env` file in the project directory with the following environment variables:
+
+   Create a `.env` file in the project directory with the following environment variables.
+
    ```env
    WATSONX_PROJECT_ID=CHANGE_FOR_YOUR_WATSONX_PROJECT_ID
    API_KEY=CHANGE_FOR_YOUR_IBM_CLOUD_API_KEY
