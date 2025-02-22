@@ -21,7 +21,7 @@ It demonstrates how to integrate an AI assistant into a simple web-based applica
 
 ## Demo
 
-<img src="demo.gif" />
+![demo.gif](demo.gif)
 
 ## Prerequisites
 
