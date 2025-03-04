@@ -29,6 +29,7 @@ This collection showcases a variety of small projects and coding experiments des
 ## Projects
 
 * **[watsonx_simple_chat](./watsonx_simple_chat)**: A basic chatbot application utilizing [IBM's watsonx AI platform](https://www.ibm.com/watsonx) to provide interactive conversational experiences.
+* **[watsonx_langchain_chat](./watsonx_langchain_chat)**: A basic chatbot application utilizing [LangChain](https://www.langchain.com/) and [IBM's watsonx AI platform](https://www.ibm.com/watsonx) to provide interactive conversational experiences.
 
 ## License
 
