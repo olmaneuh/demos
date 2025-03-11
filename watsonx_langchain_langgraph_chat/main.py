@@ -121,6 +121,7 @@ def get_response(graph: CompiledStateGraph, user_input: str) -> Iterator:
 
 def main() -> None:
     """Main function to run the app."""
+
     try:
         # display app header
         st.title("Chat With LangChain, LangGraph & watsonx")
