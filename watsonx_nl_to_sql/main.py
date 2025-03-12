@@ -29,7 +29,7 @@ def load_credentials() -> Dict[str, str]:
 
 
 def init_state() -> None:
-    """Initiates the application state."""
+    """Initializes the session state if not already set."""
 
     if "sql_query" not in st.session_state:
         st.session_state["sql_query"] = ""
@@ -37,7 +37,7 @@ def init_state() -> None:
 
 @st.cache_resource(show_spinner="Loading the model...")
 def get_model(credentials: Dict[str, str]) -> ChatWatsonx:
-    """Instantiates and returns a watsonx hosted model."""
+    """Instantiates and returns a watsonx hosted model using provided credentials."""
 
     return ChatWatsonx(
         model_id=MODEL_ID,
@@ -48,7 +48,7 @@ def get_model(credentials: Dict[str, str]) -> ChatWatsonx:
 
 
 def get_query_prompt_value(prompt_input: Dict[str, Any]) -> ChatPromptValue:
-    """Generates a chat prompt based on the input and the community prompt template."""
+    """Generates a chat prompt based on the input and a community prompt template."""
 
     query_prompt_template = hub.pull("langchain-ai/sql-query-system-prompt")
 
@@ -56,7 +56,7 @@ def get_query_prompt_value(prompt_input: Dict[str, Any]) -> ChatPromptValue:
 
 
 def generate_sql_query(model: ChatWatsonx, user_input: str) -> str:
-    """TODO"""
+    """Generates an SQL query based on the user input question using the provided model."""
 
     prompt_input = {
         "dialect": db.dialect,
@@ -108,7 +108,14 @@ def main() -> None:
 
         # generate sql query when the user clicks the button
         if st.button("Generate SQL Query"):
-            st.session_state["sql_query"] = generate_sql_query(model, user_input)
+
+            if not user_input:
+                st.error("Please enter a question to generate an SQL query.")
+                return
+
+            with st.spinner("Generating SQL query..."):
+                st.session_state["sql_query"] = generate_sql_query(model, user_input)
+
             st.rerun()
 
     except Exception as e:
