@@ -33,6 +33,7 @@ This collection showcases a variety of small projects and coding experiments des
 - **[watsonx_simple_chat](./watsonx_simple_chat)**: A basic chatbot application utilizing [IBM's watsonx AI platform](https://www.ibm.com/watsonx) to provide interactive conversational experiences.
 - **[watsonx_langchain_chat](./watsonx_langchain_chat)**: A basic chatbot application utilizing [LangChain](https://www.langchain.com/) and [IBM's watsonx AI platform](https://www.ibm.com/watsonx) to provide interactive conversational experiences.
 - **[watsonx_langchain_langgraph_chat](./watsonx_langchain_langgraph_chat)**: A basic chatbot application similar to [watsonx_langchain_chat](./watsonx_langchain_chat) but it uses [LangGraph](https://langchain-ai.github.io/langgraph/) persistence to manage the context of the conversation.
+- **[watsonx_nl_to_sql](./watsonx_nl_to_sql)**: An application that converts natural language questions into syntactically valid SQL queries using a real database schema.
 
 ## License
 
