@@ -23,13 +23,13 @@ The application has a simple interface built with [Streamlit](https://streamlit.
 
 ## Demo
 
-![demo.gif](./demo.gif)
+![demo.gif](./assets/demo.gif)
 
 ## Database
 
 The application seamlessly integrates with a real [SQLite](https://www.sqlite.org/) database using an authentic database schema. For demonstration purposes, a small [`sales.db`](./sales.db) file is included in the repository.
 
-![db_schema.jpg](./db_schema.jpg)
+![db_schema.jpg](./assets/db_schema.jpg)
 
 ## Prerequisites
 
