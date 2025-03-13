@@ -1,4 +1,4 @@
-# From Natural Language to SQL With watsonx
+# From Natural Language To SQL With watsonx
 
 ## Overview
 
