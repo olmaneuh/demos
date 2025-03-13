@@ -77,9 +77,7 @@ def main() -> None:
 
     try:
         # display app header
-        st.title("From Natural Language to SQL with watsonx")
-        st.write(f"**Model:** {MODEL_ID}")
-        st.divider()
+        st.title("From Natural Language to SQL With watsonx")
 
         # load credentials
         credentials = load_credentials()
